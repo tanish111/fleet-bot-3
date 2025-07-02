@@ -1,39 +1,52 @@
-/* Basic styles for the calculator */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
 #calculator {
-    width: 300px;
-    margin: 50px auto;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    width: 320px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 20px;
 }
 
 #display {
-    background-color: #eee;
-    padding: 10px;
-    font-size: 2em;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    font-size: 2.5em;
     text-align: right;
-    border-radius: 3px;
-    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;
+    grid-gap: 10px;
 }
 
 button {
-    padding: 15px;
-    font-size: 1.2em;
+    padding: 20px;
+    font-size: 1.5em;
     border: none;
-    border-radius: 3px;
-    background-color: #f0f0f0;
+    border-radius: 5px;
+    background-color: #e0e0e0;
     cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 button:hover {
-    background-color: #ddd;
+    background-color: #d0d0d0;
 }
 
 .operator {
@@ -42,17 +55,17 @@ button:hover {
 }
 
 .operator:hover {
-    background-color: #cc7700;
+    background-color: #e68a00;
 }
 
 .equals {
-    background-color: #007bff;
+    background-color: #28a745;
     color: white;
     grid-column: span 2;
 }
 
 .equals:hover {
-    background-color: #0056b3;
+    background-color: #218838;
 }
 
 .clear {
@@ -65,9 +78,9 @@ button:hover {
 }
 
 .decimal {
-    background-color: #f0f0f0;
+    background-color: #e0e0e0;
 }
 
 .decimal:hover {
-    background-color: #ddd;
+    background-color: #d0d0d0;
 }
