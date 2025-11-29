@@ -1,5 +1,5 @@
 {
-  "client_id": "https://raw.githubusercontent.com/<username>/<repo>/main/client-metadata.json",
+  "client_id": "https://raw.githubusercontent.com/tanish111/fleet-bot-3/refs/heads/main/client-metadata.json",
   "redirect_uris": ["http://localhost:5000/oauth/callback"],
   "grant_types": ["authorization_code"],
   "response_types": ["code"],
